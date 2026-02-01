@@ -1,14 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { projectData } from '../data/projectData';
 
 const Options = () => {
+  const { headboard, tips } = projectData.options;
+
   return (
     <div className="container animate-fade-in">
       <h1 className="text-center mb-8">Options & Notes</h1>
       
       <div className="glass-card mb-8">
-        <h2><span role="img" aria-label="plus">➕</span> Optional: Add a Headboard</h2>
-        <p>You can build a separate headboard and bolt it to the frame or mount it to the wall.</p>
+        <h2><span role="img" aria-label="plus">➕</span> {headboard.title}</h2>
+        <p>{headboard.description}</p>
         <div style={{ padding: '1.5rem', background: '#f8f4f0', borderRadius: 'var(--radius-md)', marginTop: '1rem' }}>
           <h4>Panel Style</h4>
           <p>Wide vertical or horizontal boards glued and screwed together.</p>
@@ -20,18 +23,12 @@ const Options = () => {
       <div className="glass-card mb-8">
         <h2>Pro Tips</h2>
         <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
-          <div>
-            <h3>Pre-drilling</h3>
-            <p>Always pre-drill holes near ends of boards to prevent splitting.</p>
-          </div>
-          <div>
-            <h3>Squareness</h3>
-            <p>Check diagonals frequently. If they match, your frame is square.</p>
-          </div>
-          <div>
-            <h3>Wood Selection</h3>
-            <p>Sight down boards at the store to ensure they are straight and flat.</p>
-          </div>
+          {tips.map((tip, index) => (
+            <div key={index}>
+              <h3>{tip.title}</h3>
+              <p>{tip.content}</p>
+            </div>
+          ))}
         </div>
       </div>
 

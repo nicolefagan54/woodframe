@@ -1,16 +1,67 @@
-# React + Vite
+# Woodframe Blueprint 🛏️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A collaborative, open-source guide for building a DIY Queen-Size Bed Frame.
 
-Currently, two official plugins are available:
+## Overview
+**Woodframe Blueprint** is a modern, interactive web application that guides users through the process of building a sturdy, elegant wooden platform bed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with **React** and **Vite**, this application transforms static instructions into a dynamic, reliable, and beautiful digital blueprint.
 
-## React Compiler
+## Features
+- **Interactive Guide:** Step-by-step instructions broken down into manageable phases.
+- **Tools & Materials:** Clear lists with specific dimensional cut requirements.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Safety First:** Dedicated sections for personal protective equipment and safe workspace setup.
+- **Premium UI:** A "Glassmorphism" aesthetic that feels refined and pleasant to use.
+- **Responsive:** Works great on tablets and phones for use in the workshop.
 
-## Expanding the ESLint configuration
+## Project Structure
+This project is data-driven, separating the guide content from the UI components.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/data/projectData.js`: **The Schema**. All project measurements, steps, and lists are defined here.
+- `src/components/`: Reusable UI elements (`Navigation`, etc.).
+- `src/pages/`: The core views of the application.
+
+## Technologies
+- **Vite**: Next Generation Frontend Tooling
+- **React**: Library for web user interfaces
+- **React Router**: Declarative routing
+- **Vanilla CSS**: Custom premium styling variables
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- npm
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/nicolefagan54/woodframe.git
+   cd woodframe
+   ```
+
+1. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+1. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+
+
+## License
+
+This project is licensed under the # LICENSE
+
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+*Happy Building!*
