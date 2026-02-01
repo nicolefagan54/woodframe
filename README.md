@@ -3,6 +3,11 @@
 > A collaborative, open-source guide for building a DIY Queen-Size Bed Frame.
 
 ## Overview
+
+
+![App Preview](/public/preview.png)
+
+
 **Woodframe Blueprint** is a modern, interactive web application that guides users through the process of building a sturdy, elegant wooden platform bed.
 
 Built with **React** and **Vite**, this application transforms static instructions into a dynamic, reliable, and beautiful digital blueprint.
@@ -11,9 +16,12 @@ Built with **React** and **Vite**, this application transforms static instructio
 - **Interactive Guide:** Step-by-step instructions broken down into manageable phases.
 - **Tools & Materials:** Clear lists with specific dimensional cut requirements.
 
+
+
 - **Safety First:** Dedicated sections for personal protective equipment and safe workspace setup.
 - **Premium UI:** A "Glassmorphism" aesthetic that feels refined and pleasant to use.
 - **Responsive:** Works great on tablets and phones for use in the workshop.
+
 
 ## Project Structure
 This project is data-driven, separating the guide content from the UI components.
@@ -21,6 +29,7 @@ This project is data-driven, separating the guide content from the UI components
 - `src/data/projectData.js`: **The Schema**. All project measurements, steps, and lists are defined here.
 - `src/components/`: Reusable UI elements (`Navigation`, etc.).
 - `src/pages/`: The core views of the application.
+
 
 ## Technologies
 - **Vite**: Next Generation Frontend Tooling
@@ -57,11 +66,10 @@ This project is data-driven, separating the guide content from the UI components
 
 
 
+
 ## License
 
-This project is licensed under the # LICENSE
-
-MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 *Happy Building!*
