@@ -4,9 +4,7 @@
 
 ## Overview
 
-
 ![App Preview](/public/preview.png)
-
 
 **Woodframe Blueprint** is a modern, interactive web application that guides users through the process of building a sturdy, elegant wooden platform bed.
 
